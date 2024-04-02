@@ -1,0 +1,35 @@
+/*
+------->  اولا: يوجد نوعين من وحدات القياس  
+                    _________|__________
+                    |                  |
+                absolute            relative
+
+
+1- النوع الثابت (absolute)----> px /cm/mm/pc/pt/in
+2- النوع متأثر بحاجات اخري (relative)-------> rem/ em /%/ VW /EX/vmax/vmin /vh/ch/calc
+____________________
+شرح rem -----> بتروح تشوف root قيمتة ايه بظبط  وبتضرب الرقم في القيمه الاثانيه ال root   
+ex: root= 16px : 2 rem *16px 
+--->root : هو قيمه html الاساسيه ب px
+ما هو em: يتروح تشوف الاب في ايه بظبط 
+ex : div =20px : 2em*20px
+شرح % : بتاخذ من قيمه الاب 
+vm: اختصار كلمه  " viewport width " بياخد قيمه عرض الشاشه المتاح  معايا 
+ex : width : 100vw ;
+كده هيجيب 100 في 100 من عرض الشاشه المتاح قدامي 
+vh : تعبر عن الطول الشاشه المتاحه معايا  " viewport height " اختصار
+ calc: من خلالها تقدر تعمل عمليه حسابيه 
+
+*/
+div {
+
+    background: red;
+    width: 200px;
+}
+
+
+p {
+    background: blueviolet;
+    font-size: 20px;
+    width: calc(100%-60px);
+}
